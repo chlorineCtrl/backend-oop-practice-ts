@@ -1,0 +1,58 @@
+Objective: Design a backend for a simplified version of bKash
+
+Acceptance Criteria:
+- Users can view their current account balance
+- Users can transfer money to another registered user by providing the recipient's phone number and amount
+- Users can pay their utility bill to utility providers. They can choose the provider from a list of providers in the system.
+- Given a list of transactions, write a function that would return the top N users based on number of transactions, in descending order of transaction volume. The result should include the user name, phone number, and number of transactions.
+- Users can view their transaction history, ordered by most recent. The history should include all kinds of transactions. For user transactions, it should include the recipient’s phone number, the amount. For bill payments, it should include the utility provider name. All transactions should also have the payment date.
+
+Bonus problem:
+- Admin users can create promo codes in the system, which users can use while paying bills. Each promo code can be used a certain number of times per user, and each promo code has a certain amount of cashback.
+- Admin users can see a list of all promo codes, including the total number of uses, the average number of times utilized per user, and the total amount of cashback disbursed for each promo code. This list should be ordered by most recent promo code first.
+
+
+
+
+Objective: Design a backend for a simplified version of Pathao focusing on ride requests and management.
+Acceptance Criteria:
+Users can request a ride by selecting a location for pickup, and their destination. Assume that there are fixed locations for pickup and dropoff which users / drivers can select from their app. E.g. Banani, Mohakhali, Uttara - these can be locations for pickup / dropoff.
+Drivers can view available ride requests and accept or reject them
+Once a ride is accepted, it is removed from the list of available rides.
+Drivers can mark rides as completed once t hey reach the destination.
+Given a list of ride information, write a function that returns the top N routes used based on number of rides. Location A to B and B to A should be considered as the same route. The list should be ordered by most popular first.
+Users can fetch the list of their past rides ordered by most recent. The list should include pickup and dropoff locations, the driver’s name, and the ride’s rating.
+Bonus Problem:
+Implement an area search to find drivers in a user’s nearby location. For example, given a user’s location coordinates, it should find all the available drivers within a certain radius
+Users can rate their driver after completing a ride, and the ride history should include the driver's average rating.
+
+
+Summary: Simplified version of Booking.com
+Design the backend for a simplified version of booking.com, a travel agency for lodgimg reservation
+following the acceptance criteria below.
+Acceptance Criteria
+Users can see all hotels in the system.
+Hotels will consist of a name, location, description and pricing information for accomodation, food,
+service charge, etc.
+Users can search hotels with keywords matching with either the hotel name or the description.
+Users can leave a review for any hotel and a rating from 1 to 5 with the review.
+Users can fetch all reviews for any hotel. Reviews should be ordered by descending order of the
+rating, so reviews with higher rating should come first.
+Users can filter hotels based on location, pricing range and review rating.
+Users can see all the nearest hotels within a distance if they specify the location and the required
+distance.
+
+
+Objective: Design a backend for a simplified version of a Food Delivery System
+Acceptance Criteria:
+
+    Users can view a list of available restaurants, each with its name, location, and rating.
+    Users can place an order by selecting items from a restaurant’s menu. Each restaurant has a fixed set of items available.
+    Drivers can view available delivery requests and accept or reject them.
+    Once a driver accepts a delivery, it is removed from the list of available deliveries.
+    Users can track their past orders, including restaurant name, items ordered, and driver’s name.
+    Drivers can mark a delivery as completed once the food is delivered.
+    Users can rate both the restaurant and the driver after the delivery.
+    Bonus Problem:
+        Implement a search function where users can find restaurants within a certain radius of their location.
+        Create a function to list the top N most ordered dishes across all restaurants.
